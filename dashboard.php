@@ -481,11 +481,8 @@ body {
 </head>
 <body>
 
-<?php
-
-include 'Header.php';
-
-include 'Menu.php';
+<?php include 'Header.php'; ?>
+<?php include 'Menu.php'; ?>
 
 <!-- ═══════════════ MAIN ═══════════════ -->
 <div id="main-layout">
@@ -786,6 +783,4 @@ document.querySelectorAll('.widget').forEach(w => {
 });
 </script>
 
-include 'Footer.php';
-
-?>
+<?php include 'Footer.php'; ?>
