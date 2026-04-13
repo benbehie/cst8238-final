@@ -481,12 +481,11 @@ body {
 </head>
 <body>
 
-<!-- ═══════════════ TOP BAR ═══════════════ -->
-<div id="topbar">
-    <h1>✦ SOCMEDIA</h1>
-    <span class="tb-user">Logged in as <strong style="color:#e0e0ff"><?= htmlspecialchars($me_name) ?></strong></span>
-    <a href="login.php" class="logout">Log out</a>
-</div>
+<?php
+
+include 'Header.php';
+
+include 'Menu.php';
 
 <!-- ═══════════════ MAIN ═══════════════ -->
 <div id="main-layout">
@@ -786,5 +785,7 @@ document.querySelectorAll('.widget').forEach(w => {
     });
 });
 </script>
-</body>
-</html>
+
+include 'Footer.php';
+
+?>
